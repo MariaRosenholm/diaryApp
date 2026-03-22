@@ -1,7 +1,0 @@
-{
-  "host": "localhost",
-  "port": 3306,
-  "user": "diaryADMIN",
-  "password": "d1aryJ33J33",
-  "database": "DiaryData"
-}
