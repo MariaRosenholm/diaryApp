@@ -1,0 +1,240 @@
+{
+  "info": {
+    "_postman_id": "f5ceb56a-44f7-4d1f-b4f5-c8ae39fa1727",
+    "name": "codeForSafety",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "19981779"
+  },
+  "item": [
+    {
+      "name": "http://localhost:4000/api/addLabel",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"labelId\":1,\n    \"diaryId\":39,\n    \"id\": 39\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:4000/api/addLabel",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "4000",
+          "path": [
+            "api",
+            "addLabel"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:4000/api/addUser",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name\": \"Maria R\",\n    \"id\": 39\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:4000/api/addUser",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "4000",
+          "path": [
+            "api",
+            "addUser"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:4000/api/linkUserAndUserData",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"userId\": 39,\n    \"userDataId\":39,\n    \"id\": 39\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:4000/api/linkUserAndUserData",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "4000",
+          "path": [
+            "api",
+            "linkUserAndUserData"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:4000/api/addDiaryEntry",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"text\":\"example\",\n    \"userId\":39,\n    \"dateAndTime\":\"2026-03-02 11:04:01\" ,\n    \"id\": 39\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:4000/api/addDiaryEntry",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "4000",
+          "path": [
+            "api",
+            "addDiaryEntry"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:4000/api/diaryEntriesAll",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"id\": 2\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:4000/api/diaryEntriesAll",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "4000",
+          "path": [
+            "api",
+            "diaryEntriesAll"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:4000/api/allLabelsPerUser",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"id\": 2\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:4000/api/allLabelsPerUser",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "4000",
+          "path": [
+            "api",
+            "allLabelsPerUser"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:4000/api/labelsPerDiaryEntry",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"id\": 2\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:4000/api/labelsPerDiaryEntry",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "4000",
+          "path": [
+            "api",
+            "labelsPerDiaryEntry"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

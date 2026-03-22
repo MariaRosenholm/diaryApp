@@ -1,0 +1,10 @@
+{
+  "getAll": "select text, dateAndTime from diaryEntries where userId = ?",
+  "getAllLabelsForUser": "select label from labels where ID in (select labelId from linkDiaryAndLabels where diaryID in (select ID from diaryEntries where userId = ?))",
+  "getLabelsPerEntry": "select label from labels inner join linkDiaryAndLabels on labels.ID = linkDiaryAndLabels.labelID where diaryID = ?",
+  "addUser": "INSERT INTO users VALUES (?,?)",
+  "addUserData": "INSERT INTO userData VALUES (?,?,?)",
+  "linkUserAndUserData": "INSERT INTO linkUsersAndUserData VALUES (?,?,?)",
+  "insertDiaryEntry": "INSERT INTO diaryEntries VALUES (?,?,?,?)",
+  "addLabel": "INSERT INTO linkDiaryAndLabels VALUES (?,?,?);"
+}
